@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="Masono">
+  <head>
+    <title>Masono</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset='utf8'>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 1000px,
+      }
+    </style>
+  </head>
+  <body ng-controller="MasonoKontrolilo">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <div class="container" id="demander"  ng-init="sekv()">
+      {% raw %}
+      <h1>Masono</h1>
+        <div class="form-group">
+        <p>{{ret[1]}}</p>
+        <p>{{ret[2]}}</p>
+        </div>
+        <button class="btn btn-default" ng-click="ago('vere', ret[0])">Vere</button>
+        <button class="btn btn-default" ng-click="ago('malvere', ret[0])">Malvere</button>
+        <button class="btn btn-default" ng-click="ago('nedefinite', ret[0])">Nedefinite</button>
+      <br>
+      {% endraw %}
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
