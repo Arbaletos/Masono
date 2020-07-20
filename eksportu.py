@@ -5,7 +5,7 @@ def eksportu(datumo, datejo):
   db = sqlite3.connect(datejo)
   for line in open(datumo,'r',encoding='utf-8'):
       kunteksto, demando = line.strip().split('\t')
-      db.cursor().execute('insert into demandoj(konteksto, demando) values(?, ?)', 
+      db.cursor().execute('insert into demandoj(kunteksto, demando) values(?, ?)', 
                           [kunteksto, demando])
   db.commit()
 

@@ -1,7 +1,7 @@
 drop table if exists demandoj;
 create table demandoj (
   dem_id integer primary key autoincrement,
-  konteksto text not null,
+  kunteksto text not null,
   demando text not null
 );
 

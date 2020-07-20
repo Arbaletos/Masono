@@ -25,7 +25,7 @@ def index():
 @app.route('/sekv', methods=['GET'])
 def sekva_demando():
   db = get_db()
-  cur = list(db.execute('select dem_id, konteksto, demando from demandoj'))
+  cur = list(db.execute('select dem_id, kunteksto, demando from demandoj'))
   cur = random.choice(cur)
   return json.dumps(list(cur))
 
