@@ -11,4 +11,4 @@ def eksportu(datumo, datejo):
 
 
 if __name__=='__main__':
-    eksportu('en_datumo.csv', 'masono.db')
+    eksportu('en_datumo.tsv', 'masono.db')
