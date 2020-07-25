@@ -2,7 +2,3 @@ body            { font-family: sans-serif; background: #ddd; }
 a, h1, h2, p    { color: #377ba8; }
 h1, h2, p       { font-family: 'Century Gothic', serif;}
 p		{ font-size: 30px;}
-
-.uncompleted	{background: #fdd;}
-
-.completed	{background: #dfd;
